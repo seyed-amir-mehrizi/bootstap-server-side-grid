@@ -1,0 +1,17 @@
+
+
+<div class="container">
+    <table class="table table-striped text-center">
+        <thead>
+          <tr>
+            <th  *ngFor="let item of _object.keys(data[0])">{{item}}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let row of data">
+            <td *ngFor="let objKey of _object.keys(row)">{{row[objKey]}}</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
